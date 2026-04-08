@@ -19,13 +19,11 @@ This project demonstrates real-world detection methods for SOC analysts and high
 ### Attack Tools:
 - Hydra (`hydra -l <username> -P <password-list> ssh://<target-ip>`)
 
-image: 
-
+![Kali Linux](https://github.com/saf1Hckr/BruteScope/blob/main/Hydra_Brute_Force.png)
 
 - Manual SSH login attempts for simulation
 
-image:
-
+![SSH](https://github.com/saf1Hckr/BruteScope/blob/main/SSH_Manual.png)
 
 ### Target Logs:
 - `/var/log/auth.log` (Ubuntu SSH authentication logs)
@@ -46,7 +44,7 @@ index=soc_logs "Failed password"
 | where count > 10
 ```
 
-image:
+![Failed Count](https://github.com/saf1Hckr/BruteScope/blob/main/SSH_Count_Failed.png)
 
 2️⃣ All Failed attempts:
 
@@ -55,12 +53,13 @@ I created an extra Field "action" only to record all the failed attempts with br
 index=soc_logs | stats count by action | where count > 10
 ```
 
-image: 
+![Bar Chart](https://github.com/saf1Hckr/BruteScope/blob/main/Bar_Chart.png)
+
+![Pie Chart](https://github.com/saf1Hckr/BruteScope/blob/main/Pie_chart.png)
 
 ## 📊 Splunk Visualization 
 - Column Chart: Number of failed login attempts per IP 
 - Timechart: Failed attempts over time 
-- Alerts: Trigger alert if failed attempts exceed threshold 
 
 ## 🧠 Learning Outcomes 
 - Understand SSH brute force attack patterns 
