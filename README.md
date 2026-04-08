@@ -57,6 +57,7 @@ index=soc_logs | stats count by action | where count > 10
 
 ![Pie Chart](https://github.com/saf1Hckr/BruteScope/blob/main/Pie_chart.png)
 
+
 ## 📊 Splunk Visualization 
 - Column Chart: Number of failed login attempts per IP 
 - Timechart: Failed attempts over time 
