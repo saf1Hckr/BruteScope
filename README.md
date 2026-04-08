@@ -24,6 +24,9 @@ image:
 
 - Manual SSH login attempts for simulation
 
+image:
+
+
 ### Target Logs:
 - `/var/log/auth.log` (Ubuntu SSH authentication logs)
 
